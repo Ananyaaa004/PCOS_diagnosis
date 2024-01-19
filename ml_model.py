@@ -9,7 +9,7 @@ from imblearn.over_sampling import SMOTE
 
 def load_data():
     # Read data from the Excel file
-    df = pd.read_excel(r"C:\Users\sivae\Downloads\PCOS_data.xlsx", sheet_name="Full_new")
+    df = pd.read_excel(r"C:\Users\ananya\Downloads\PCOS_data.xlsx", sheet_name="Full_new")
 
 
     # Preprocess the data (you may replace this with your actual preprocessing steps)
