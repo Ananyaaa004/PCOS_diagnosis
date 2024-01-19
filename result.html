@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PCOS Prediction Result</title>
+</head>
+<body>
+    <h2>PCOS Probability:</h2>
+    <p>{{ probability }}</p>
+
+    <!-- Display the saved plot image -->
+    <img src="{{ url_for('static', filename='plot.png') }}" alt="PCOS Probability Plot">
+
+    <p>
+        {% if probability > 0.5 %}
+            Higher probability of having the disease
+        {% else %}
+            Lower probability of having the disease
+        {% endif %}
+    </p>
+</body>
+</html>
